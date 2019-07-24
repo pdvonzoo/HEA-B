@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcrypt-nodejs");
 import { User } from "../../../../model/user";
 import { generateToken } from "../../../utils";
 
