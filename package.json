@@ -30,8 +30,8 @@
     "nodemon": "^1.18.11"
   },
   "scripts": {
-    "start": "babel-node src/server.js",
-    "devStart": "nodemon --exec babel-node src/server.js"
+    "start": "babel-node server.js",
+    "devStart": "nodemon --exec babel-node server.js"
   },
   "repository": {
     "type": "git",
