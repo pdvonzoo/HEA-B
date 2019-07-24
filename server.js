@@ -2,12 +2,12 @@ import dotenv from "dotenv";
 dotenv.config();
 import { GraphQLServer } from "graphql-yoga";
 import logger from "morgan";
-import schema from "./schema";
-import "./middleware";
-import { authenticateToken, isAuthenticated } from "./middleware";
-import cors from 'cors';
+import schema from "./src/schema";
+import "./src/middleware";
+import { authenticateToken, isAuthenticated } from "./src/middleware";
+import cors from "cors";
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 const server = new GraphQLServer({
   schema,
   context: ({ request }) => ({ request, isAuthenticated })
